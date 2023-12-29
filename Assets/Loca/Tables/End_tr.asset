@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: End_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: b3050c2bd2df0e14f800885bf2eb445d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 36241838080
+    m_Localized: "*Kazand\u0131n\u0131z, tebrikler...\r\n*\u015Eimdi yap\u0131lmas\u0131
+      gereken her \u015Fey yap\u0131ld\u0131.\r\n*Ana men\xFCde bir bonus kazand\u0131n\u0131z.\r\n*Muffet'in
+      kampanyas\u0131n\u0131 sab\u0131rs\u0131zl\u0131kla beklemeyin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108794908672
+    m_Localized: "*Kaybettiniz, yeterince h\u0131zl\u0131 de\u011Fildiniz ya da belki
+      de k\xF6t\xFC kararlar verdiniz.\r\n*Bunu kendiniz g\xF6receksiniz...\r\n*\u015Eimdi
+      tekrar deneyin ya da gidin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 155171328000
+    m_Localized: "Kredileri g\xF6rmek i\xE7in S P A C E tu\u015Funa bas\u0131n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192110563328
+    m_Localized: "M\xFC\u015Fteri sprite'lar\u0131\r\nthe_crow710\n\r\nArka plan
+      sprite'lar\u0131\r\nkayther\n\r\nProgramlama\r\nkayther\n\r\n\xD6zel te\u015Fekk\xFCrler\r\nTavsiye
+      verdi\u011Fi ve beta testi yapt\u0131\u011F\u0131 i\xE7in hatty.\r\nkayther'in
+      karde\u015Fi fikir verdi\u011Fi ve programlama konusunda tavsiyelerde bulundu\u011Fu
+      i\xE7in.\nG\xFCrkan\r I Discord name: G\xFCrkanGG#3027\r\n\n\u015Eark\u0131
+      jeneriklerini g\xF6rmek i\xE7in S P A C E tu\u015Funa bas\u0131n\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251267026944
+    m_Localized: "Temmie remix: Ben Briggs/GameChops\nUnderswap Muffet remix: RaysonWilliams\nShop
+      theme trap: Mai (hardest anime sample!! +FLP)\n\n\n\n\n\n\n\n\nAna men\xFCye
+      d\xF6nmek i\xE7in S P A C E tu\u015Funa bas\u0131n"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Home Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Home
+  m_TableCollectionNameGuidString: 10cf57422baf2de47a6fab7d45efbbee
+  m_Entries:
+  - m_Id: 483769880576
+    m_Key: Tutorial1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9006188761088
+    m_Key: Tutorial2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9175764471808
+    m_Key: Tutorial 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357152215437312
+    m_Key: Boss Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357154224508928
+    m_Key: Fame Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357154656522240
+    m_Key: Time Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357155096924160
+    m_Key: Sup Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357155562491904
+    m_Key: Help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357894535942144
+    m_Key: Main
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357968993226752
+    m_Key: Next Day
+    m_Metadata:
+      m_Items: []
+  - m_Id: 358039793078272
+    m_Key: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 358142301868032
+    m_Key: Day
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4609476203093688320
+  references:
+    version: 2
+    RefIds:
+    - rid: 4609476203093688320
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1699484929931

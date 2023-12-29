@@ -5,16 +5,35 @@ using UnityEngine;
 public class Wanted : MonoBehaviour
 {
     private SpriteRenderer sr;
-    public Sprite sprite1;
-    public Sprite sprite2;
-    public Sprite sprite3;
-    public Sprite sprite4;
-    public Sprite sprite5;
-    public Sprite hate1;
-    public Sprite hate2;
-    public Sprite hate3;
-    public Sprite hate4;
-    public Sprite hate5;
+    public Sprite Swant1;
+    public Sprite Nwant1;
+
+    public Sprite Swant2;
+    public Sprite Nwant2;
+
+    public Sprite Swant3;
+    public Sprite Nwant3;
+
+    public Sprite Swant4;
+    public Sprite Nwant4;
+
+    public Sprite Swant5;
+    public Sprite Nwant5;
+
+    public Sprite Shate1;
+    public Sprite Nhate1;
+
+    public Sprite Shate2;
+    public Sprite Nhate2;
+
+    public Sprite Shate3;
+    public Sprite Nhate3;
+
+    public Sprite Shate4;
+    public Sprite Nhate4;
+
+    public Sprite Shate5;
+    public Sprite Nhate5;
 
     public GameObject wantItem;
     Cliente wantedI;
@@ -33,63 +52,128 @@ public class Wanted : MonoBehaviour
 
     public void ChangeSprite(int income)
     {
-        if (wantedI.haterMode == true)
+        if(VariableManager.NSFW == true)
         {
-            switch (income)
+            if (wantedI.haterMode == true)
             {
-                case 4:
-                    sr.sprite = hate5;
-                    break;
+                switch (income)
+                {
+                    case 4:
+                        sr.sprite = Nhate5;
+                        break;
 
-                case 3:
-                    sr.sprite = hate4;
-                    break;
+                    case 3:
+                        sr.sprite = Nhate4;
+                        break;
 
-                case 2:
-                    sr.sprite = hate3;
-                    break;
+                    case 2:
+                        sr.sprite = Nhate3;
+                        break;
 
-                case 1:
-                    sr.sprite = hate2;
-                    break;
+                    case 1:
+                        sr.sprite = Nhate2;
+                        break;
 
-                case 0:
-                    sr.sprite = hate1;
-                    break;
+                    case 0:
+                        sr.sprite = Nhate1;
+                        break;
 
-                default:
-                    print("Rare error kinda sussy");
-                    break;
+                    default:
+                        print("Rare error kinda sussy");
+                        break;
+                }
+            }
+            else
+            {
+                switch (income)
+                {
+                    case 4:
+                        sr.sprite = Nwant5;
+                        break;
+
+                    case 3:
+                        sr.sprite = Nwant4;
+                        break;
+
+                    case 2:
+                        sr.sprite = Nwant3;
+                        break;
+
+                    case 1:
+                        sr.sprite = Nwant2;
+                        break;
+
+                    case 0:
+                        sr.sprite = Nwant1;
+                        break;
+
+                    default:
+                        print("Rare error kinda sussy");
+                        break;
+                }
             }
         }
         else
         {
-            switch (income)
+            if (wantedI.haterMode == true)
             {
-                case 4:
-                    sr.sprite = sprite5;
-                    break;
+                switch (income)
+                {
+                    case 4:
+                        sr.sprite = Shate5;
+                        break;
 
-                case 3:
-                    sr.sprite = sprite4;
-                    break;
+                    case 3:
+                        sr.sprite = Shate4;
+                        break;
 
-                case 2:
-                    sr.sprite = sprite3;
-                    break;
+                    case 2:
+                        sr.sprite = Shate3;
+                        break;
 
-                case 1:
-                    sr.sprite = sprite2;
-                    break;
+                    case 1:
+                        sr.sprite = Shate2;
+                        break;
 
-                case 0:
-                    sr.sprite = sprite1;
-                    break;
+                    case 0:
+                        sr.sprite = Shate1;
+                        break;
 
-                default:
-                    print("Rare error kinda sussy");
-                    break;
+                    default:
+                        print("Rare error kinda sussy");
+                        break;
+                }
+            }
+            else
+            {
+                switch (income)
+                {
+                    case 4:
+                        sr.sprite = Swant5;
+                        break;
+
+                    case 3:
+                        sr.sprite = Swant4;
+                        break;
+
+                    case 2:
+                        sr.sprite = Swant3;
+                        break;
+
+                    case 1:
+                        sr.sprite = Swant2;
+                        break;
+
+                    case 0:
+                        sr.sprite = Swant1;
+                        break;
+
+                    default:
+                        print("Rare error kinda sussy");
+                        break;
+                }
             }
         }
+
     }
 }

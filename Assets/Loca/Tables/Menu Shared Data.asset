@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Menu Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Menu
+  m_TableCollectionNameGuidString: 3532f5f666154494f9375c4a65c6b53a
+  m_Entries:
+  - m_Id: 541231845376
+    m_Key: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3976408764416
+    m_Key: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1811778424967168
+    m_Key: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1811839510810624
+    m_Key: Bonus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1811909266280448
+    m_Key: Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1811989163577344
+    m_Key: SXF Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1812234853322752
+    m_Key: Music Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1812275051532288
+    m_Key: Back
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4609476044939591707
+  references:
+    version: 2
+    RefIds:
+    - rid: 4609476044939591707
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1698882264450

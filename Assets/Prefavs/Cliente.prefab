@@ -28,6 +28,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1005505892241085395}
   m_RootOrder: 0
@@ -60,6 +61,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.7924528, g: 0.13082945, b: 0.13082945, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -87,6 +89,7 @@ GameObject:
   - component: {fileID: 3844478975482517}
   - component: {fileID: 1975801939535082588}
   - component: {fileID: 5731451113547951201}
+  - component: {fileID: 1535908671457135678}
   m_Layer: 0
   m_Name: Cliente
   m_TagString: Client
@@ -104,6 +107,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -50, y: 6.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7441082906334729521}
   - {fileID: 1881766054422806776}
@@ -121,10 +125,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -176,24 +182,30 @@ MonoBehaviour:
   wantItem: 0
   tipRate: 0
   haterMode: 0
-  chik1: {fileID: -7465016678137103996, guid: c9a0b2332c676df4ab7ca00c6d347888, type: 3}
-  happyChik1: {fileID: -5548116283239367434, guid: c9a0b2332c676df4ab7ca00c6d347888,
-    type: 3}
-  chik2: {fileID: -8875009389382855912, guid: c9a0b2332c676df4ab7ca00c6d347888, type: 3}
-  happyChik2: {fileID: -624859621100978628, guid: c9a0b2332c676df4ab7ca00c6d347888,
-    type: 3}
-  chik3: {fileID: -7236632723155633791, guid: c9a0b2332c676df4ab7ca00c6d347888, type: 3}
-  happyChik3: {fileID: -304568270748157115, guid: c9a0b2332c676df4ab7ca00c6d347888,
-    type: 3}
-  chik4: {fileID: 8098938461308209378, guid: c9a0b2332c676df4ab7ca00c6d347888, type: 3}
-  happyChik4: {fileID: 1375816129489388027, guid: c9a0b2332c676df4ab7ca00c6d347888,
-    type: 3}
-  chik5: {fileID: -1793326199887383800, guid: c9a0b2332c676df4ab7ca00c6d347888, type: 3}
-  happyChik5: {fileID: -915650016348696978, guid: c9a0b2332c676df4ab7ca00c6d347888,
-    type: 3}
-  boss: {fileID: -517192288042204155, guid: c9a0b2332c676df4ab7ca00c6d347888, type: 3}
-  happyBoss: {fileID: -9185617327688818696, guid: c9a0b2332c676df4ab7ca00c6d347888,
-    type: 3}
+  Schik1: {fileID: 0}
+  ShappyChik1: {fileID: 0}
+  Nchik1: {fileID: 0}
+  NhappyChik1: {fileID: 0}
+  Schik2: {fileID: 0}
+  ShappyChik2: {fileID: 0}
+  Nchik2: {fileID: 0}
+  NhappyChik2: {fileID: 0}
+  Schik3: {fileID: 0}
+  ShappyChik3: {fileID: 0}
+  Nchik3: {fileID: 0}
+  NhappyChik3: {fileID: 0}
+  Schik4: {fileID: 0}
+  ShappyChik4: {fileID: 0}
+  Nchik4: {fileID: 0}
+  NhappyChik4: {fileID: 0}
+  Schik5: {fileID: 0}
+  ShappyChik5: {fileID: 0}
+  Nchik5: {fileID: 0}
+  NhappyChik5: {fileID: 0}
+  Sboss: {fileID: 0}
+  ShappyBoss: {fileID: 0}
+  Nboss: {fileID: 0}
+  NhappyBoss: {fileID: 0}
   wanting: {fileID: 6359039375988207292}
 --- !u!68 &1975801939535082588
 EdgeCollider2D:
@@ -211,17 +223,21 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 7.8487844, y: 17.860563}
-  - {x: -8.345356, y: 18.112122}
-  - {x: 8.222671, y: 12.984006}
-  - {x: -9.179698, y: 8.064752}
-  - {x: 8.488795, y: 5.5788336}
+  - {x: 6.9615965, y: 33.475132}
+  - {x: -7.458164, y: 26.274284}
+  - {x: 8.400107, y: 21.146168}
+  - {x: -9.179698, y: 16.404354}
+  - {x: 7.956481, y: 9.837353}
   - {x: -8.459924, y: 0.76736546}
   - {x: 9.175922, y: -4.278601}
-  - {x: -10.009058, y: -8.760106}
-  - {x: 8.218252, y: -13.342971}
-  - {x: -9.184469, y: -18.311705}
-  - {x: 9.123271, y: -17.969494}
+  - {x: -6.992609, y: -14.9704485}
+  - {x: 7.5623226, y: -16.41414}
+  - {x: -5.354452, y: -19.592045}
+  - {x: 5.9932203, y: -23.987854}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!114 &5731451113547951201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +257,26 @@ MonoBehaviour:
   hpBar: {fileID: 6603214695548892851}
   slider: {fileID: 2689525794017932858}
   life: {fileID: 1005505892241085395}
+--- !u!95 &1535908671457135678
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800479834369327842}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61a4487e625dcf140bb22ea503a39664, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2582396509465609949
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +303,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1005505892241085395}
   m_RootOrder: 2
@@ -304,6 +341,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 24, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1800479834369327844}
   m_RootOrder: 1
@@ -319,10 +357,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -370,17 +410,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a233276377ecc11498ef8613c4060711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite1: {fileID: 6342051687900682236, guid: 2d824bc6a0dab5648b544865bdcc0f94, type: 3}
-  sprite2: {fileID: 6478011361186452360, guid: 2d824bc6a0dab5648b544865bdcc0f94, type: 3}
-  sprite3: {fileID: -8553458368161168101, guid: 2d824bc6a0dab5648b544865bdcc0f94,
-    type: 3}
-  sprite4: {fileID: 2968337740607997103, guid: 2d824bc6a0dab5648b544865bdcc0f94, type: 3}
-  sprite5: {fileID: 3992612121310726462, guid: 2d824bc6a0dab5648b544865bdcc0f94, type: 3}
-  hate1: {fileID: -1622980332690875848, guid: 2d824bc6a0dab5648b544865bdcc0f94, type: 3}
-  hate2: {fileID: -5237106885460350316, guid: 2d824bc6a0dab5648b544865bdcc0f94, type: 3}
-  hate3: {fileID: 5803373713237083468, guid: 2d824bc6a0dab5648b544865bdcc0f94, type: 3}
-  hate4: {fileID: -5235100573115091152, guid: 2d824bc6a0dab5648b544865bdcc0f94, type: 3}
-  hate5: {fileID: -7389598657710839841, guid: 2d824bc6a0dab5648b544865bdcc0f94, type: 3}
+  Swant1: {fileID: -203376999, guid: 4853b626b584c614bb06f52454738640, type: 3}
+  Nwant1: {fileID: 655937262, guid: 36035474e4eca204d84dbd90cec53604, type: 3}
+  Swant2: {fileID: -99775629, guid: 4853b626b584c614bb06f52454738640, type: 3}
+  Nwant2: {fileID: 1628675568, guid: 36035474e4eca204d84dbd90cec53604, type: 3}
+  Swant3: {fileID: 1237978163, guid: 4853b626b584c614bb06f52454738640, type: 3}
+  Nwant3: {fileID: 1155660101, guid: 36035474e4eca204d84dbd90cec53604, type: 3}
+  Swant4: {fileID: -1879951694, guid: 4853b626b584c614bb06f52454738640, type: 3}
+  Nwant4: {fileID: 481582765, guid: 36035474e4eca204d84dbd90cec53604, type: 3}
+  Swant5: {fileID: 526875073, guid: 4853b626b584c614bb06f52454738640, type: 3}
+  Nwant5: {fileID: 449059549, guid: 36035474e4eca204d84dbd90cec53604, type: 3}
+  Shate1: {fileID: 1327151880, guid: 4853b626b584c614bb06f52454738640, type: 3}
+  Nhate1: {fileID: -69208354, guid: 36035474e4eca204d84dbd90cec53604, type: 3}
+  Shate2: {fileID: -829025512, guid: 4853b626b584c614bb06f52454738640, type: 3}
+  Nhate2: {fileID: -1336919466, guid: 36035474e4eca204d84dbd90cec53604, type: 3}
+  Shate3: {fileID: -64579151, guid: 4853b626b584c614bb06f52454738640, type: 3}
+  Nhate3: {fileID: 1514919374, guid: 36035474e4eca204d84dbd90cec53604, type: 3}
+  Shate4: {fileID: 74016727, guid: 4853b626b584c614bb06f52454738640, type: 3}
+  Nhate4: {fileID: -1568025749, guid: 36035474e4eca204d84dbd90cec53604, type: 3}
+  Shate5: {fileID: 21747343, guid: 4853b626b584c614bb06f52454738640, type: 3}
+  Nhate5: {fileID: 537551715, guid: 36035474e4eca204d84dbd90cec53604, type: 3}
   wantItem: {fileID: 1800479834369327842}
 --- !u!1 &6519688149354254978
 GameObject:
@@ -410,6 +459,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5270875611601673352}
   m_RootOrder: 0
@@ -442,6 +492,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.96941197, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -485,6 +536,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1005505892241085395}
   m_Father: {fileID: 1800479834369327844}
@@ -538,6 +590,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &7988431561980179481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,6 +634,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6529544360935579655}
   m_Father: {fileID: 1005505892241085395}
@@ -618,6 +672,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 468299518140685501}
   - {fileID: 5270875611601673352}
@@ -644,6 +699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}

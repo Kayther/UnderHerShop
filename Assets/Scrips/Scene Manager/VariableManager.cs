@@ -28,6 +28,8 @@ public class VariableManager
 
     public static bool bonus;
 
+    public static bool NSFW = true;
+
     public static void Reset()
     {
         boss = 0;

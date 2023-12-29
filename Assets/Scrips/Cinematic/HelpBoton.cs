@@ -13,7 +13,6 @@ public class HelpBoton : MonoBehaviour
     void Start()
     {
         help = GetComponent<TextMeshProUGUI>();
-        help.text = " ";
     }
 
     // Update is called once per frame
@@ -22,13 +21,13 @@ public class HelpBoton : MonoBehaviour
         time += Time.deltaTime;
         if (time >= 12f)
         {
-            help.text = "Presiona Z para avanzar";
+            help.color = new Color(0, 0, 0, 1);
         }
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
             time = 0;
-            help.text = " ";
+            help.color = new Color(0, 0, 0, 0);
         }
     }
 }

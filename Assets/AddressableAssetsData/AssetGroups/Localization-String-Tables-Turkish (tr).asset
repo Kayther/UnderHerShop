@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Turkish (tr)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-Turkish (tr)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3de913fbc8b878347a7a6b8deb0c8ac1
+  m_SerializeEntries:
+  - m_GUID: edd70acc3b1780948a4e396b2b91d04b
+    m_Address: Menu_tr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    - Preload
+  - m_GUID: a470ce5fe185ab042ab8f303412ee98e
+    m_Address: Home_tr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    - Preload
+  - m_GUID: e7718d2d20fbfeb4385ba1388233dd7e
+    m_Address: Shop_tr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    - Preload
+  - m_GUID: de5d25bab49746642ba6488c0b20c846
+    m_Address: End_tr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    - Preload
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 565e21460aca40c42831b4b72fbe15e5, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 93ef5970889e6e740a24c3355c790e1c, type: 2}
+    - {fileID: 11400000, guid: 7d4edf097ffad554c8029bcaf636c6bf, type: 2}

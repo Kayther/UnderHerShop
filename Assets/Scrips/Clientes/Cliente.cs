@@ -15,28 +15,19 @@ public class Cliente : MonoBehaviour
     [HideInInspector]public bool haterMode;
 
     private SpriteRenderer sr;
-
-    public Sprite chik1;
-    public Sprite happyChik1;
-    public Sprite chik2;
-    public Sprite happyChik2;
-    public Sprite chik3;
-    public Sprite happyChik3;
-    public Sprite chik4;
-    public Sprite happyChik4;
-    public Sprite chik5;
-    public Sprite happyChik5;
-    public Sprite boss;
-    public Sprite happyBoss;
+    private Animator an;
 
     GameObject spawner;
     public GameObject wanting;
     Life life;
+
     
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+
+        an = GetComponent<Animator>();
 
         wantItem = Random.Range(0, 5);
 
@@ -51,7 +42,14 @@ public class Cliente : MonoBehaviour
         switch (rand)
         {
             case 0:
-                sr.sprite = boss;
+                if (VariableManager.NSFW == true)
+                {
+                    an.Play("Cliente_boss");
+                }
+                else
+                {
+                    an.Play("SafeCliente_boss");
+                }
                 bossMode = true;
                 life.maxHp = life.maxHp * (3f + VariableManager.slideBoss/7.5f);
                 life.hp = life.maxHp;
@@ -62,28 +60,59 @@ public class Cliente : MonoBehaviour
                 wanting.transform.position = new Vector3(wanting.transform.position.x, this.transform.position.y + 15.5f, wanting.transform.position.z);
                 break;
             default:
-                switch (face)
+                if(VariableManager.NSFW == true)
                 {
-                    case 4:
-                        sr.sprite = chik5;
-                        break;
-                    case 3:
-                        sr.sprite = chik4;
-                        break;
-                    case 2:
-                        sr.sprite = chik3;
-                        break;
-                    case 1:
-                        sr.sprite = chik2;
-                        break;
-                    case 0:
-                        sr.sprite = chik1;
-                        break;
-                    default:
-                        sr.sprite = chik1;
-                        print("Rare error kinda sussy");
-                        break;
+                    switch (face)
+                    {
+                        case 4:
+                            an.Play("SafeCliente_5");
+                            break;
+                        case 3:
+                            an.Play("SafeCliente_4");
+                            break;
+                        case 2:
+                            an.Play("SafeCliente_3");
+                            break;
+                        case 1:
+                            an.Play("SafeCliente_2");
+                            break;
+                        case 0:
+                            an.Play("SafeCliente_1");
+                            break;
+                        default:
+                            an.Play("SafeCliente_1");
+                            print("Rare error kinda sussy");
+                            break;
+                    }
                 }
+                else
+                {
+                    switch (face)
+                    {
+                        case 4:
+                            an.Play("Cliente_5");
+                            break;
+                        case 3:
+                            an.Play("Cliente_4");
+                            transform.position = new Vector2(transform.position.x, -0.6f);
+                            break;
+                        case 2:
+                            an.Play("Cliente_3");
+                            break;
+                        case 1:
+                            an.Play("Cliente_2");
+                            transform.position = new Vector2(transform.position.x, 4.75f);
+                            break;
+                        case 0:
+                            an.Play("Cliente_1");
+                            break;
+                        default:
+                            an.Play("Cliente_1");
+                            print("Rare error kinda sussy");
+                            break;
+                    }
+                }
+
                 switch (Random.Range(0, (25 - VariableManager.dayCount/4)))
                 {
                     case 0:
@@ -104,6 +133,9 @@ public class Cliente : MonoBehaviour
         if (life.dead == true)
         {
             StartCoroutine(OutFade());
+        }
+        else
+        {
         }
     }
 
@@ -227,31 +259,69 @@ public class Cliente : MonoBehaviour
         {
             if (bossMode == true)
             {
-                sr.sprite = happyBoss;
+                if (VariableManager.NSFW == false)
+                {
+                    an.Play("Cliente_boss_Happy");
+                }
+                else
+                {
+                    an.Play("SafeCliente_boss_Happy");
+                }
             }
             else
             {
-                switch (face)
+                if (VariableManager.NSFW == false)
                 {
-                    case 4:
-                        sr.sprite = happyChik5;
-                        break;
-                    case 3:
-                        sr.sprite = happyChik4;
-                        break;
-                    case 2:
-                        sr.sprite = happyChik3;
-                        break;
-                    case 1:
-                        sr.sprite = happyChik2;
-                        break;
-                    case 0:
-                        sr.sprite = happyChik1;
-                        break;
-                    default:
-                        print("Rare error kinda sussy");
-                        break;
+                    switch (face)
+                    {
+                        case 4:
+                            an.Play("Cliente_5_Happy");
+                            break;
+                        case 3:
+                            an.Play("Cliente_4_Happy");
+                            break;
+                        case 2:
+                            an.Play("Cliente_3_Happy");
+                            break;
+                        case 1:
+                            an.Play("Cliente_2_Happy");
+                            break;
+                        case 0:
+                            an.Play("Cliente_1_Happy");
+                            break;
+                        default:
+                            an.Play("Cliente_1_Happy");
+                            print("Rare error kinda sussy");
+                            break;
+                    }
                 }
+                else
+                {
+                    switch (face)
+                    {
+                        case 4:
+                            an.Play("SafeCliente_5_Happy");
+                            break;
+                        case 3:
+                            an.Play("SafeCliente_4_Happy");
+                            break;
+                        case 2:
+                            an.Play("SafeCliente_3_Happy");
+                            break;
+                        case 1:
+                            an.Play("SafeCliente_2_Happy");
+                            break;
+                        case 0:
+                            an.Play("SafeCliente_1_Happy");
+                            break;
+                        default:
+                            an.Play("SafeCliente_1_Happy");
+                            print("Rare error kinda sussy");
+                            break;
+                    }
+                }
+
+
             }
         }
         for (float alpha = 1; alpha >= 0; alpha -= 0.1f)
@@ -262,7 +332,7 @@ public class Cliente : MonoBehaviour
         if (life.dead == true 
             && VariableManager.endDay == false)
         {
-            if (boss == true)
+            if (bossMode == true)
             {
                 VariableManager.fame -= 10 * (2 + VariableManager.slideFame / 10);
             }

@@ -23,4 +23,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Finale.unity
     guid: 170ca2c1d43a1c542a2db6bcb817740d
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 16e5dc080a21e1341b4abe18b95594ca,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: a6c268f5aa171b44d9810f8c3ea65c6f,
+      type: 2}

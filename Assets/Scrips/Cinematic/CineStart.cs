@@ -71,6 +71,18 @@ public class CineStart : MonoBehaviour
             case 6:
                 srSans.sprite = comicWink;
                 break;
+            case 7:
+                srSans.sprite = comicClose;
+                break;
+            case 8:
+                srSans.sprite = comicSassy;
+                break;
+            case 9:
+                srSans.sprite = comicNormal;
+                break;
+            case 10:
+                srSans.sprite = comicWink;
+                break;
             default:
                 print("error kinda sussy");
                 break;

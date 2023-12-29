@@ -21,8 +21,14 @@ public class TimeToGo : MonoBehaviour
     public GameObject fondo;
     public SpriteRenderer sr;
 
-    public Sprite open;
-    public Sprite close;
+    [SerializeField]
+    Sprite SbgClosedIMG;
+    [SerializeField]
+    Sprite NbgClosedIMG;
+    [SerializeField]
+    Sprite SbgOpenIMG;
+    [SerializeField]
+    Sprite NbgOpenIMG;
 
     private void Start()
     {
@@ -67,7 +73,15 @@ public class TimeToGo : MonoBehaviour
 
     public IEnumerator Starto()
     {
-        sr.sprite = close;
+        if(VariableManager.NSFW == true)
+        {
+            sr.sprite = NbgClosedIMG;
+        }
+        else
+        {
+            sr.sprite = SbgClosedIMG;
+        }
+
         VariableManager.endDay = false;
         dmgSave = Spawn.dmg;
         Spawn.clientes = 999;
@@ -126,7 +140,15 @@ public class TimeToGo : MonoBehaviour
 
         startText.text = "";
         yield return new WaitForSeconds(1f);
-        sr.sprite = open;
+        if (VariableManager.NSFW == true)
+        {
+            sr.sprite = NbgOpenIMG;
+        }
+        else
+        {
+            sr.sprite = SbgOpenIMG;
+        }
+
         SFX.Open();
         yield return new WaitForSeconds(0.001f);
 
@@ -154,7 +176,14 @@ public class TimeToGo : MonoBehaviour
         Spawn.dmg = 999;
         SFX.Open();
         yield return new WaitForSeconds(2f);
-        sr.sprite = close;
+        if (VariableManager.NSFW == true)
+        {
+            sr.sprite = NbgClosedIMG;
+        }
+        else
+        {
+            sr.sprite = SbgClosedIMG;
+        }
         yield return new WaitForSeconds(0.001f);
         yield return new WaitForSeconds(1f);
         SFX2.MusDesactivator();

@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: End_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: b3050c2bd2df0e14f800885bf2eb445d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 251267026944
+    m_Localized: 'Temmie remix: Ben Briggs/GameChops
+
+      Underswap Muffet remix:
+      RaysonWilliams
+
+      Shop theme trap: Mai (hardest anime sample!! +FLP)
+
+
+
+
+
+
+
+
+
+      Press
+      S P A C E to return to the main menu.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36241838080
+    m_Localized: '*You have won, congratulations...
+
+      *Now everything that had
+      to be done is done.
+
+      *You have earned a bonus in the main menu.
+
+      *Don''t
+      wait impatiently for Muffet''s campaign'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 108794908672
+    m_Localized: '*You have lost, you were not fast enough, or perhaps you made bad
+      decisions.
+
+      *You''ll see that for yourself...
+
+      *Now try again or
+      leave.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 155171328000
+    m_Localized: Press S P A C E to see the credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192110563328
+    m_Localized: "Customer sprites\r\nthe_crow710\n\r\nBackground sprites\r\nkayther\r\n\r\r\nProgramming\r\nkayther\n\rSpecial
+      thanks\r\nhattyy for giving advice and beta testing.\r\nkayther's brother for
+      giving ideas and advising on programming.\r\nName: G\xFCrkan\r I Discord name:
+      G\xFCrkanGG#3027\r\n\r\nPress S P A C E to view the song credits."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

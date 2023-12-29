@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Localization.Settings;
+
 
 public class Dialogo : MonoBehaviour
 {
@@ -12,7 +14,40 @@ public class Dialogo : MonoBehaviour
     [SerializeField] private AudioClip sVoice;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private SpriteRenderer globo;
-    [SerializeField, TextArea] private string[] dialogos;
+    private string[] dialogosES = { "*hola chica, ¿como estas?", 
+        "*sabes por que estoy aqui, ¿no?", 
+        "*tienes que pagar tu deuda.", 
+        "*...", 
+        "*si, se que es duro, pero solo soy la mensajera",
+        "*estoy segura que si te esfuerzas puedes hacerlo",
+        "*solo tienes que conseguir 125.000 en 20 dias.",
+        "*...",
+        "*empieza a trabajar muchacha.",
+        "*gracias, tu tambien eres linda.",
+        "*nos vemos."};
+    private string[] dialogosEN = { "*hello gal, how are 'ya?",
+        "*you know why i'm here, right?",
+        "*you have to pay your debt.",
+        "*...",
+        "*yeah, i know is hard, but I'm just the messenger",
+        "*i'm pretty sure you can do it",
+        "*you only have to get 125.000 in 20 days.",
+        "*...",
+        "*start workin'.",
+        "*thanks, you're also a cutie pie.",
+        "*see 'ya."};
+    private string[] dialogosTR = { "Merhaba kızım, nasılsın?",
+         "neden burada olduğumu biliyorsun, değil mi?",
+         "borcunu ödemelisin.",
+         "...",
+         "evet, zor olduğunu biliyorum ama ben sadece elçiyim",
+         "Bunu yapabileceğinden oldukça eminim",
+         "sadece 20 günde 125.000 kazanmanız gerekiyor.",
+         "...",
+         "çalışmaya başla.",
+         "teşekkürler, sen de çok tatlısın.",
+         "*görüşürüz."};
+    private string[] dialogos;
 
     private int lineIndex;
     private bool starto;
@@ -25,6 +60,21 @@ public class Dialogo : MonoBehaviour
         cine = gameObject.GetComponent<CineStart>();
         au = GetComponent<AudioSource>();
         au.clip = sVoice;
+
+        switch (LocalizationSettings.SelectedLocale.ToString())
+        {
+            case "Spanish (es)":
+                dialogos = dialogosES;
+                break;
+            case "English (en)":
+                dialogos = dialogosEN;
+                break;
+            case "Turkish (tr)":
+                dialogos = dialogosTR;
+                break;
+            default:
+                break;
+        }
     }
 
     private void Update()

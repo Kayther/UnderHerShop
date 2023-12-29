@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Home_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 10cf57422baf2de47a6fab7d45efbbee, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 483769880576
+    m_Localized: "*Customers will come to buy items, and the item they want will
+      be displayed above their heads.\r\n*You must click on the item in your inventory
+      at the bottom of the screen and then click on the customer.\r\n\r*There is
+      another way to do this faster, but you will have to pay for it.\r\n\r\nPress
+      S P A C E to continue."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9006188761088
+    m_Localized: '*Improving your shelves gives you the opportunity to sell items
+      faster.
+
+      *Press the number 1 button to grab the first item, number 2
+      for the second item, etc.
+
+      *This way, you don''t have to click to pick
+      it up.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9175764471808
+    m_Localized: '*Fame increases when you serve customers and decreases when they
+      leave.
+
+      *The more fame you have, the more money you will earn, but customers
+      will leave more quickly.
+
+      *Improving fame increases the fame gained but
+      also increases, to a lesser extent, the fame lost.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357152215437312
+    m_Localized: '*Improve business relationships
+
+      (More bosses)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357154224508928
+    m_Localized: '*Improve advertising
+
+      (More fame, see help below)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357154656522240
+    m_Localized: '*Improve furniture
+
+      (Longer waiting time and longer days)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357155096924160
+    m_Localized: '*Improve shelves
+
+      (See help below)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357155562491904
+    m_Localized: '*Help'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357894535942144
+    m_Localized: '*Main menu'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357968993226752
+    m_Localized: '*Next day'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 358039793078272
+    m_Localized: '*Next'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 358142301868032
+    m_Localized: Day
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

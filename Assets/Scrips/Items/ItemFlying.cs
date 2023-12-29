@@ -12,6 +12,23 @@ public class ItemFlying : MonoBehaviour
 
     public int itemType;
 
+    SpriteRenderer sr;
+    public Sprite NSFWIMG;
+    public Sprite SFWIMG;
+
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+        if (VariableManager.NSFW == true)
+        {
+            sr.sprite = NSFWIMG;
+        }
+        else
+        {
+            sr.sprite = SFWIMG;
+        }
+    }
+
     private void OnMouseDown()
     {
         switch (itemType)

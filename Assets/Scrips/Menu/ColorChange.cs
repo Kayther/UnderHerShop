@@ -13,6 +13,7 @@ public class ColorChange : MonoBehaviour
 
     public bool darker;
     private bool resetPos;
+    public bool isflag;
 
     private void Start()
     {
@@ -41,13 +42,19 @@ public class ColorChange : MonoBehaviour
     private void OnMouseEnter()
     {
         SFX.Touch();
-        tmp.color = new Color(tmp.color.r, tmp.color.g, 0, tmp.color.a);
+        if (isflag == false)
+        {
+            tmp.color = new Color(tmp.color.r, tmp.color.g, 0, tmp.color.a);
+        }
         resetPos = true;
     }
 
     private void OnMouseExit()
     {
-        tmp.color = new Color(tmp.color.r, tmp.color.g, 1, tmp.color.a);
+        if (isflag == false)
+        {
+            tmp.color = new Color(tmp.color.r, tmp.color.g, 1, tmp.color.a);
+        }
         resetPos = false;
         speed = 0;
         transform.position = new Vector2(startPosX, startPosY);

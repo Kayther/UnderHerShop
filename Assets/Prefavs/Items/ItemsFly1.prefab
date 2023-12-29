@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -30, y: -17.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,10 +45,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -102,6 +105,8 @@ MonoBehaviour:
   item3: {fileID: 6016727954526067611, guid: 446b245a6077d2949b216c4d73ed1738, type: 3}
   item4: {fileID: 5020549924218319054, guid: 15242388fc2d7b04b9a47e56d041df64, type: 3}
   item5: {fileID: 8549187192446090138, guid: e3e04c2504648204e8678540dbb02c7e, type: 3}
+  NSFWIMG: {fileID: 655937262, guid: 36035474e4eca204d84dbd90cec53604, type: 3}
+  SFWIMG: {fileID: -203376999, guid: 4853b626b584c614bb06f52454738640, type: 3}
 --- !u!61 &6122060544094392416
 BoxCollider2D:
   m_ObjectHideFlags: 0

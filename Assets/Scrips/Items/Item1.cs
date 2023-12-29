@@ -15,16 +15,32 @@ public class Item1 : MonoBehaviour
     public GameObject item4;
     public GameObject item5;
 
+    SpriteRenderer sr;
+    public Sprite NSFWIMG;
+    public Sprite SFWIMG;
+
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+        if(VariableManager.NSFW == true)
+        {
+            sr.sprite = NSFWIMG;
+        }
+        else
+        {
+            sr.sprite = SFWIMG;
+        }
+    }
 
     // Update is called once per frame
     void Update()
-     {
-             Vector3 mousePos;
-             mousePos = Input.mousePosition;
-             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+    {
+        Vector3 mousePos;
+        mousePos = Input.mousePosition;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-             this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, 0);
-     }
+        this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, 0);
+    }
 
      private void OnMouseUp()
      {
